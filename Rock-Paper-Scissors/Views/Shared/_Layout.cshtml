@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/gameClient.css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <nav class="navbar secondary-bg-color border-bottom box-shadow">
+                <span class="left secondary-text-color">
+                    Rock Paper Scissors
+                </span>
+                <span class="right secondary-text-color">
+                    @User.Identity.Name
+                </span>
+            </nav>
+        </header>
+        <div>
+            <main role="main" class="pb-3 h-100">
+                @RenderBody()
+            </main>
+        </div>
+
+
+    </div>
+    <footer class="box-margin border-top footer text-muted secondary-bg-color">
+        @if (User.Identity.IsAuthenticated)
+        {
+            <span class="right-1">
+                <a class="nav-link secondary-text-color" asp-controller="Home" asp-action="Logout">Logout</a>
+            </span>
+        }
+        else
+        { // without this hidden text we wouldn't have seen the footer when it's empty
+            <span class="hide">.</span>
+        }
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Play";
+}
+
+@model UserModel
+
+<script src="~/lib/signalr/signalr.min.js"></script>
+<script src="~/js/gameClient.js" asp-append-version="true"></script>
+
+
+<div id="mainGame" class="main-game-window">
+    <div id="grid" class="row box-margin no-gutters">
+        <div class="col d-flex flex-column align-items-center">
+            <div class="leftSide box-shadow box box-border box-margin main-bg-color d-flex justify-content-center align-items-center">
+                <p id="playersResponse" class="response"></p>
+            </div>
+            You
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+            <div class="rightSide box box-shadow box-border box-margin main-bg-color d-flex justify-content-center align-items-center">
+                <p id="opponentsResponse" class="response"></p>
+            </div>
+            Opponent
+        </div>
+
+    </div>
+    <div class="d-flex justify-content-center align-items-center box-margin" id="status"></div>
+    <div id="controls" class="d-flex justify-content-center align-items-center">
+        <div  class="row no-gutters mt-auto">
+            <div id="playerInput" class="col no-gutters"></div>
+            <div id="playerSubmit" class="col no-gutters"></div>
+        </div>
+    </div>
+</div>
+<div id="listComponent" class="box-margin box-shadow main-bg-color box-border display-block left-1 list-component scroll-y list-padding">
+    <p class="middle">Active players list</p>
+    <ul id="list" class="">
+    </ul>
+</div>
+

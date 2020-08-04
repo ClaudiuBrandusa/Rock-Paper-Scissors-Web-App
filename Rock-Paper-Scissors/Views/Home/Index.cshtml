@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model UserModel
+
+<div class="text-center top-39 middle-horizontally">
+    <h1 class="main-text-color">Welcome to Rock Paper Scissors Game</h1>
+    <h4>Pick a name so we can start!</h4>
+    <form asp-controller="Home" asp-action="Index" method="post">
+        <input type="text" name="username" placeholder="username" value="" class="input-primary" />
+        <button type="submit" class="button-primary">Begin</button>
+        <div asp-validation-summary="All" class="text-danger"></div>
+    </form>
+</div>

@@ -1,0 +1,68 @@
+﻿/*List part*/
+
+.no-list-style {
+    list-style-type: none;
+}
+
+.scroll-y {
+    overflow-y: auto;
+}
+
+.list-component {
+    height: 30vh;
+    min-height: 200px;
+}
+
+.list-padding {
+    padding-left: 13px;
+    padding-right: 39px;
+}
+
+/*Link part*/
+
+.link {
+    text-decoration: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.link:hover
+{
+    color: red !important;
+    cursor: pointer;
+}
+
+/*Main game part*/
+
+.main-game-window {
+    margin: auto;
+}
+
+/*Response part*/
+
+.response {
+    position: absolute;
+    font-size: 600%;
+}
+
+/*Box part*/
+
+.box-margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.box-border {
+    border: solid 7px #94886c;
+    border-radius: 10px;
+}
+
+.box {
+    width: 90%;
+    min-width: 260px;
+    height: 80%;
+    min-height: 350px;
+}

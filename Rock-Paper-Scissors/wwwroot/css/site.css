@@ -1,0 +1,156 @@
+﻿#wrapper {
+    position: relative;
+    height: 100%;
+}
+
+/* Colors */
+
+.main-text-color {
+    color: #5c5442 !important;
+}
+
+.secondary-text-color {
+    color: #fffaed !important;
+}
+
+/* Centering */
+
+.middle {
+    display: flex;
+    justify-content: center;
+}
+
+.top-39 {
+    position: relative;
+    top: 39vh;
+    /*vertical-align: middle;*/
+}
+
+.middle-horizontally {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.left {
+    float: left;
+}
+.left-1 {
+    float: left !important;
+    margin-left: 2% !important;
+}
+
+.right {
+    float: right;
+}
+
+.right-1 {
+    float: right;
+    margin-right: 2%;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+/*a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}*/
+
+/* Provide sufficient contrast against white background */
+a {
+  /*color: #0366d6;*/
+}
+
+.button-primary {
+    color: #fffaed;
+    background-color: #5c5442;
+    border-color: #8a795a;
+    border-radius: 2px;
+}
+
+/*.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}*/
+
+/* Sticky footer styles
+-------------------------------------------------- */
+/*html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}*/
+
+.border-top {
+    border-top: 3px solid #8a795a !important;
+}
+.border-bottom {
+    border-bottom: 3px solid #8a795a !important;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .7);
+}
+
+/*button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+*/
+/* Sticky footer styles
+-------------------------------------------------- */
+/*    html {
+  position: relative;
+  min-height: 100%;
+}*/
+
+body {
+    background-color: #fffaed;
+}
+
+.main-bg-color {
+    background-color: #ecdfc6 !important;
+}
+
+.secondary-bg-color {
+    background-color: #5c5442 !important;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  margin-bottom: 0px !important;
+  line-height: 60px;
+}
+
+.display-block {
+    display: block;
+}
+
+/* Scrollbar customization */
+
+div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #ffebba;
+}
+
+div::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #69604c;
+}
